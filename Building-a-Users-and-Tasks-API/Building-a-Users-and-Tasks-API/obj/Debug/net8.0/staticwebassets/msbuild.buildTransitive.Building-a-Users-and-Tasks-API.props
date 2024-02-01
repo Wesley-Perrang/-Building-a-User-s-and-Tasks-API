@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Building-a-Users-and-Tasks-API.props" />
+</Project>

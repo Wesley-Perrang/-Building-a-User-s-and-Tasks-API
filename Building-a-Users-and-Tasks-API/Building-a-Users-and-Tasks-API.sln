@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Building-a-Users-and-Tasks-API", "Building-a-Users-and-Tasks-API\Building-a-Users-and-Tasks-API.csproj", "{A432A4C5-5772-4A47-8079-57A8B900917F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A432A4C5-5772-4A47-8079-57A8B900917F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A432A4C5-5772-4A47-8079-57A8B900917F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A432A4C5-5772-4A47-8079-57A8B900917F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A432A4C5-5772-4A47-8079-57A8B900917F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {674DC284-4182-45B9-AFA9-882C21F37326}
+	EndGlobalSection
+EndGlobal
