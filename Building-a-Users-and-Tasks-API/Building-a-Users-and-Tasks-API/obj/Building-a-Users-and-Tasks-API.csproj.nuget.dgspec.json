@@ -27,7 +27,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-Api\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API.csproj": {
+                "projectPath": "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-Api\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -57,6 +61,16 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.6.6, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.5.6, )"
             }
           },
           "imports": [

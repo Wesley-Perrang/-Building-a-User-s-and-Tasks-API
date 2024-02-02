@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "pJWA3MVjGaSsiVo6pxOFOaVDk2zjnjAR55HUCGvamTsakDf5aJz2v7QExjdnV7VRhpSZlhOrBRigeQFkNNEurw==",
-  "success": true,
+  "dgSpecHash": "j9zcgu7jlThsUZMjixs+29b+FHQPSMTMTdTEZq9eE5wkRuXGE3mmCc3Lt7HzdvtOO6ksbyc0O3gil9LTyfXdFQ==",
+  "success": false,
   "projectFilePath": "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-Api\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\basil stanley\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
@@ -55,7 +55,25 @@
     "C:\\Users\\basil stanley\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "C:\\Users\\basil stanley\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\basil stanley\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
-    "C:\\Users\\basil stanley\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
+    "C:\\Users\\basil stanley\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
+    "C:\\Users\\basil stanley\\.nuget\\packages\\xunit\\2.6.6\\xunit.2.6.6.nupkg.sha512",
+    "C:\\Users\\basil stanley\\.nuget\\packages\\xunit.abstractions\\2.0.3\\xunit.abstractions.2.0.3.nupkg.sha512",
+    "C:\\Users\\basil stanley\\.nuget\\packages\\xunit.analyzers\\1.10.0\\xunit.analyzers.1.10.0.nupkg.sha512",
+    "C:\\Users\\basil stanley\\.nuget\\packages\\xunit.assert\\2.6.6\\xunit.assert.2.6.6.nupkg.sha512",
+    "C:\\Users\\basil stanley\\.nuget\\packages\\xunit.core\\2.6.6\\xunit.core.2.6.6.nupkg.sha512",
+    "C:\\Users\\basil stanley\\.nuget\\packages\\xunit.extensibility.core\\2.6.6\\xunit.extensibility.core.2.6.6.nupkg.sha512",
+    "C:\\Users\\basil stanley\\.nuget\\packages\\xunit.extensibility.execution\\2.6.6\\xunit.extensibility.execution.2.6.6.nupkg.sha512",
+    "C:\\Users\\basil stanley\\.nuget\\packages\\xunit.runner.visualstudio\\2.5.6\\xunit.runner.visualstudio.2.5.6.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1108",
+      "level": "Error",
+      "message": "Cycle detected. \r\n  Building-a-Users-and-Tasks-API -> Building-a-Users-and-Tasks-API.",
+      "libraryId": "Building-a-Users-and-Tasks-API",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
