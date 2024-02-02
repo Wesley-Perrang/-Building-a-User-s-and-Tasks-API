@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Building-a-Users-and-Tasks-API</name>
+    </assembly>
+    <members>
+        <member name="T:Building_a_User_s_and_Tasks_API.Controllers.UserController">
+            <summary>
+            Manages operations related to users.
+            </summary>
+        </member>
+        <member name="M:Building_a_User_s_and_Tasks_API.Controllers.UserController.#ctor(Building_a_User_s_and_Tasks_API.Interface.IUserService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Building_a_User_s_and_Tasks_API.Controllers.UserController"/> class.
+            </summary>
+            <param name="userService">The user service.</param>
+        </member>
+        <member name="M:Building_a_User_s_and_Tasks_API.Controllers.UserController.GetAllUsers">
+            <summary>
+            Retrieves all users.
+            </summary>
+        </member>
+        <member name="M:Building_a_User_s_and_Tasks_API.Controllers.UserController.GetUserById(System.Int32)">
+            <summary>
+            Retrieves a user by ID.
+            </summary>
+            <param name="id">The user ID.</param>
+            <returns>The user with the specified ID.</returns>
+        </member>
+        <member name="M:Building_a_User_s_and_Tasks_API.Controllers.UserController.CreateUser(Building_a_User_s_and_Tasks_API.Models.User)">
+            <summary>
+            Creates a new user.
+            </summary>
+            <param name="newUser">The new user data.</param>
+            <returns>The newly created user.</returns>
+        </member>
+        <member name="M:Building_a_User_s_and_Tasks_API.Controllers.UserController.UpdateUser(System.Int32,Building_a_User_s_and_Tasks_API.Models.User)">
+            <summary>
+            Updates an existing user.
+            </summary>
+            <param name="id">The ID of the user to update.</param>
+            <param name="updatedUser">The updated user data.</param>
+            <returns>No content if successful, bad request or not found otherwise.</returns>
+        </member>
+        <member name="M:Building_a_User_s_and_Tasks_API.Controllers.UserController.DeleteUser(System.Int32)">
+            <summary>
+            Deletes a user by ID.
+            </summary>
+            <param name="id">The ID of the user to delete.</param>
+            <returns>No content if successful, not found otherwise.</returns>
+        </member>
+    </members>
+</doc>

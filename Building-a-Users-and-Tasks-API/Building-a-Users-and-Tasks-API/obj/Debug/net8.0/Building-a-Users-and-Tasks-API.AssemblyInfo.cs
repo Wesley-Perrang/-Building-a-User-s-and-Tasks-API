@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Building-a-Users-and-Tasks-API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2acf84fac7cd7ea0989c424c87e7633230c8a28e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51fa652d3f11a55ecc6dad879f51fe08139b62dc")]
 [assembly: System.Reflection.AssemblyProductAttribute("Building-a-Users-and-Tasks-API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Building-a-Users-and-Tasks-API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

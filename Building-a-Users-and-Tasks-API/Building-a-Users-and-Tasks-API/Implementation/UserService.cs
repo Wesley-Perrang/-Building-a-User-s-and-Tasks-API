@@ -4,11 +4,10 @@ namespace Building_a_User_s_and_Tasks_API.Implementation;
 
 public class UserService : IUserService
 {
-    private readonly List<User> _users; // In a real-world scenario, you'd use a database or some storage mechanism.
+    private readonly List<User> _users;
 
     public UserService()
     {
-        // Initialize with some sample data. In a real scenario, you might fetch this from a database.
         _users = new List<User>
         {
             new User { ID = 1, Username = "JohnDoe", Email = "john.doe@example.com", Password = "password123" },
@@ -28,15 +27,13 @@ public class UserService : IUserService
 
     public User CreateUser(User newUser)
     {
-        // In a real scenario, you'd handle creating a new user in your database.
-        newUser.ID = _users.Count + 1; // Simulating auto-incrementing ID.
+        newUser.ID = _users.Count + 1;
         _users.Add(newUser);
         return newUser;
     }
 
     public void UpdateUser(User updatedUser)
     {
-        // In a real scenario, you'd handle updating a user in your database.
         var existingUser = _users.Find(user => user.ID == updatedUser.ID);
 
         if (existingUser != null)
@@ -49,7 +46,6 @@ public class UserService : IUserService
 
     public void DeleteUser(int userId)
     {
-        // In a real scenario, you'd handle deleting a user from your database.
         var userToDelete = _users.Find(user => user.ID == userId);
 
         if (userToDelete != null)

@@ -1,87 +1,114 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Building_a_User_s_and_Tasks_API.Models;
 using Building_a_User_s_and_Tasks_API.Interface;
-namespace Building_a_User_s_and_Tasks_API.Controllers;
 
-
-[Route("api/[controller]")]
-[ApiController]
-public class UserController : ControllerBase
+namespace Building_a_User_s_and_Tasks_API.Controllers
 {
-    private readonly IUserService _userService;
-
-    public UserController(IUserService userService)
+    /// <summary>
+    /// Manages operations related to users.
+    /// </summary>
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UserController : ControllerBase
     {
-        _userService = userService;
-    }
+        private readonly IUserService _userService;
 
-    // GET: api/user
-    [HttpGet]
-    public IEnumerable<User> GetAllUsers()
-    {
-        var users = _userService.GetAllUsers();
-        return users;
-    }
-
-    // GET: api/user/{id}
-    [HttpGet("{id}")]
-    public ActionResult<User> GetUserById(int id)
-    {
-        var user = _userService.GetUserById(id);
-
-        if (user == null)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="UserController"/> class.
+        /// </summary>
+        /// <param name="userService">The user service.</param>
+        public UserController(IUserService userService)
         {
-            return NotFound();
+            _userService = userService;
         }
 
-        return user;
-    }
-
-    // POST: api/user
-    [HttpPost]
-    public ActionResult<User> CreateUser([FromBody] User newUser)
-    {
-        if (newUser == null)
+        /// <summary>
+        /// Retrieves all users.
+        /// </summary>
+        [HttpGet]
+        public IEnumerable<User> GetAllUsers()
         {
-            return BadRequest("Invalid user data");
+            var users = _userService.GetAllUsers();
+            return users;
         }
 
-        var createdUser = _userService.CreateUser(newUser);
-        return CreatedAtAction(nameof(GetUserById), new { id = createdUser.ID }, createdUser);
-    }
-
-    // PUT: api/user/{id}
-    [HttpPut("{id}")]
-    public IActionResult UpdateUser(int id, [FromBody] User updatedUser)
-    {
-        if (updatedUser == null || id != updatedUser.ID)
+        /// <summary>
+        /// Retrieves a user by ID.
+        /// </summary>
+        /// <param name="id">The user ID.</param>
+        /// <returns>The user with the specified ID.</returns>
+        [HttpGet("{id}")]
+        public ActionResult<User> GetUserById(int id)
         {
-            return BadRequest("Invalid user data");
+            var user = _userService.GetUserById(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            return user;
         }
 
-        var existingUser = _userService.GetUserById(id);
-
-        if (existingUser == null)
+        /// <summary>
+        /// Creates a new user.
+        /// </summary>
+        /// <param name="newUser">The new user data.</param>
+        /// <returns>The newly created user.</returns>
+        [HttpPost]
+        public ActionResult<User> CreateUser([FromBody] User newUser)
         {
-            return NotFound();
+            if (newUser == null)
+            {
+                return BadRequest("Invalid user data");
+            }
+
+            var createdUser = _userService.CreateUser(newUser);
+            return CreatedAtAction(nameof(GetUserById), new { id = createdUser.ID }, createdUser);
         }
 
-        _userService.UpdateUser(updatedUser);
-        return NoContent();
-    }
-
-    // DELETE: api/user/{id}
-    [HttpDelete("{id}")]
-    public IActionResult DeleteUser(int id)
-    {
-        var userToDelete = _userService.GetUserById(id);
-
-        if (userToDelete == null)
+        /// <summary>
+        /// Updates an existing user.
+        /// </summary>
+        /// <param name="id">The ID of the user to update.</param>
+        /// <param name="updatedUser">The updated user data.</param>
+        /// <returns>No content if successful, bad request or not found otherwise.</returns>
+        [HttpPut("{id}")]
+        public IActionResult UpdateUser(int id, [FromBody] User updatedUser)
         {
-            return NotFound();
+            if (updatedUser == null || id != updatedUser.ID)
+            {
+                return BadRequest("Invalid user data");
+            }
+
+            var existingUser = _userService.GetUserById(id);
+
+            if (existingUser == null)
+            {
+                return NotFound();
+            }
+
+            _userService.UpdateUser(updatedUser);
+            return NoContent();
         }
 
-        _userService.DeleteUser(id);
-        return NoContent();
+        /// <summary>
+        /// Deletes a user by ID.
+        /// </summary>
+        /// <param name="id">The ID of the user to delete.</param>
+        /// <returns>No content if successful, not found otherwise.</returns>
+        [HttpDelete("{id}")]
+        public IActionResult DeleteUser(int id)
+        {
+            var userToDelete = _userService.GetUserById(id);
+
+            if (userToDelete == null)
+            {
+                return NotFound();
+            }
+
+            _userService.DeleteUser(id);
+            return NoContent();
+        }
     }
 }

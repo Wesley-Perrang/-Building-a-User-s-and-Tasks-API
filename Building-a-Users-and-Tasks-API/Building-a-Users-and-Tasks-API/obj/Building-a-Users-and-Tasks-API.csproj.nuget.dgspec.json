@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API.csproj": {}
+    "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-Api\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API.csproj": {
+    "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-Api\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API.csproj",
+        "projectUniqueName": "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-Api\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API.csproj",
         "projectName": "Building-a-Users-and-Tasks-API",
-        "projectPath": "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API.csproj",
+        "projectPath": "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-Api\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API.csproj",
         "packagesPath": "C:\\Users\\basil stanley\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-API\\Building-a-Users-and-Tasks-API\\obj\\",
+        "outputPath": "C:\\Users\\basil stanley\\Desktop\\-Building-a-User-s-and-Tasks-API\\Building-a-Users-and-Tasks-Api\\Building-a-Users-and-Tasks-API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\basil stanley\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +40,23 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
